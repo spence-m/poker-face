@@ -30,15 +30,17 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/composition-api/module',
     '@nuxt/typescript-build',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-socket-io'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-socket-io'],
   io: {
     // Options
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  devServerHandlers: [],
 }
